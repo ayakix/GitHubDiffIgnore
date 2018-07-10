@@ -1,0 +1,16 @@
+{
+  "name": "オラそのdiff見ねぇだ",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "icons": { "48": "icon48.png", "128": "icon128.png" },
+  "description": "I do NOT review that diff!",
+  "content_scripts": [{
+    "matches": ["https://github.com/*"],
+    "css": [],
+    "js": [
+      "myapp.js"
+    ],
+    "run_at":"document_idle"
+  }]
+}
+
